@@ -1,0 +1,6 @@
+framework module Pods_QuantsAppTask {
+  umbrella header "Pods-QuantsAppTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

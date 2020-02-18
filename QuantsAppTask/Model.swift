@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+struct Feeds {
+    
+    let status:String??
+    let timeStamp:String??
+    let image:String??
+    let name:String??
+    let profilepic:String??
+    
+    init(json: JSON) {
+        status = json["status"].stringValue
+        timeStamp = json["timeStamp"].stringValue
+        image = json["image"].stringValue
+        name = json["name"].stringValue
+        profilepic = json["profilePic"].stringValue
+        
+    }
+}

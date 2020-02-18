@@ -1,0 +1,6 @@
+framework module Pods_QuantsAppTask_QuantsAppTaskUITests {
+  umbrella header "Pods-QuantsAppTask-QuantsAppTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

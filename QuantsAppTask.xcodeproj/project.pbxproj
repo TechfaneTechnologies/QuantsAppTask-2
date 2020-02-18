@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7014A22F23FA9355003D367E /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014A22E23FA9355003D367E /* photo.png */; };
 		70B1102823F2E6390043503C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1102723F2E6390043503C /* AppDelegate.swift */; };
 		70B1102A23F2E6390043503C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1102923F2E6390043503C /* SceneDelegate.swift */; };
 		70B1102C23F2E63A0043503C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1102B23F2E63A0043503C /* ViewController.swift */; };
@@ -16,6 +17,12 @@
 		70B1103723F2E63D0043503C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B1103523F2E63D0043503C /* LaunchScreen.storyboard */; };
 		70B1104223F2E63D0043503C /* QuantsAppTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1104123F2E63D0043503C /* QuantsAppTaskTests.swift */; };
 		70B1104D23F2E63D0043503C /* QuantsAppTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1104C23F2E63D0043503C /* QuantsAppTaskUITests.swift */; };
+		70B1105B23F2E6610043503C /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1105A23F2E6610043503C /* customTableViewCell.swift */; };
+		70B1105D23F2EF4F0043503C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1105C23F2EF4F0043503C /* SwiftyJSON.swift */; };
+		70B1105F23F2F07B0043503C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1105E23F2F07B0043503C /* Model.swift */; };
+		8A66FE4C660287468EF98383 /* Pods_QuantsAppTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635DEBE7FE1896B5C8BA081F /* Pods_QuantsAppTask.framework */; };
+		9A6A0BC17273D4E722999317 /* Pods_QuantsAppTask_QuantsAppTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F366FE129FD67D8AE403CC97 /* Pods_QuantsAppTask_QuantsAppTaskUITests.framework */; };
+		AF84F541DBB320F63543EF8A /* Pods_QuantsAppTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62757630B9E6FED617987D65 /* Pods_QuantsAppTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62757630B9E6FED617987D65 /* Pods_QuantsAppTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuantsAppTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CECE77C8EEAA94103B13E3 /* Pods-QuantsAppTask-QuantsAppTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTask-QuantsAppTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuantsAppTask-QuantsAppTaskUITests/Pods-QuantsAppTask-QuantsAppTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		635DEBE7FE1896B5C8BA081F /* Pods_QuantsAppTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuantsAppTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7014A22E23FA9355003D367E /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		70B1102423F2E6390043503C /* QuantsAppTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantsAppTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B1102723F2E6390043503C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B1102923F2E6390043503C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,15 @@
 		70B1104823F2E63D0043503C /* QuantsAppTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuantsAppTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B1104C23F2E63D0043503C /* QuantsAppTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantsAppTaskUITests.swift; sourceTree = "<group>"; };
 		70B1104E23F2E63D0043503C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B1105A23F2E6610043503C /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
+		70B1105C23F2EF4F0043503C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		70B1105E23F2F07B0043503C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8773EFA60106F9E802944D7C /* Pods-QuantsAppTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTaskTests.release.xcconfig"; path = "Target Support Files/Pods-QuantsAppTaskTests/Pods-QuantsAppTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C255E414BDD64A9E3E48DE2 /* Pods-QuantsAppTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTask.release.xcconfig"; path = "Target Support Files/Pods-QuantsAppTask/Pods-QuantsAppTask.release.xcconfig"; sourceTree = "<group>"; };
+		BD6DF853A8F426903A91C43A /* Pods-QuantsAppTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTask.debug.xcconfig"; path = "Target Support Files/Pods-QuantsAppTask/Pods-QuantsAppTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D81F791177A03BF495AF9ACE /* Pods-QuantsAppTask-QuantsAppTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTask-QuantsAppTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-QuantsAppTask-QuantsAppTaskUITests/Pods-QuantsAppTask-QuantsAppTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6C8BC84613CFAD889CD674E /* Pods-QuantsAppTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantsAppTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-QuantsAppTaskTests/Pods-QuantsAppTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F366FE129FD67D8AE403CC97 /* Pods_QuantsAppTask_QuantsAppTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuantsAppTask_QuantsAppTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A66FE4C660287468EF98383 /* Pods_QuantsAppTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF84F541DBB320F63543EF8A /* Pods_QuantsAppTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6A0BC17273D4E722999317 /* Pods_QuantsAppTask_QuantsAppTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,8 @@
 				70B1104023F2E63D0043503C /* QuantsAppTaskTests */,
 				70B1104B23F2E63D0043503C /* QuantsAppTaskUITests */,
 				70B1102523F2E6390043503C /* Products */,
+				D677FCF3E830388CB23E240E /* Pods */,
+				AA11F82B80EFB9429CB61D69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +126,15 @@
 		70B1102623F2E6390043503C /* QuantsAppTask */ = {
 			isa = PBXGroup;
 			children = (
+				70B1106023F2F0F10043503C /* SwiftyJson */,
 				70B1102723F2E6390043503C /* AppDelegate.swift */,
 				70B1102923F2E6390043503C /* SceneDelegate.swift */,
 				70B1102B23F2E63A0043503C /* ViewController.swift */,
+				70B1105E23F2F07B0043503C /* Model.swift */,
 				70B1102D23F2E63A0043503C /* Main.storyboard */,
+				70B1105A23F2E6610043503C /* customTableViewCell.swift */,
 				70B1103323F2E63D0043503C /* Assets.xcassets */,
+				7014A22E23FA9355003D367E /* photo.png */,
 				70B1103523F2E63D0043503C /* LaunchScreen.storyboard */,
 				70B1103823F2E63D0043503C /* Info.plist */,
 				70B1103023F2E63A0043503C /* QuantsAppTask.xcdatamodeld */,
@@ -131,6 +160,37 @@
 			path = QuantsAppTaskUITests;
 			sourceTree = "<group>";
 		};
+		70B1106023F2F0F10043503C /* SwiftyJson */ = {
+			isa = PBXGroup;
+			children = (
+				70B1105C23F2EF4F0043503C /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJson;
+			sourceTree = "<group>";
+		};
+		AA11F82B80EFB9429CB61D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				635DEBE7FE1896B5C8BA081F /* Pods_QuantsAppTask.framework */,
+				F366FE129FD67D8AE403CC97 /* Pods_QuantsAppTask_QuantsAppTaskUITests.framework */,
+				62757630B9E6FED617987D65 /* Pods_QuantsAppTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D677FCF3E830388CB23E240E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DF853A8F426903A91C43A /* Pods-QuantsAppTask.debug.xcconfig */,
+				9C255E414BDD64A9E3E48DE2 /* Pods-QuantsAppTask.release.xcconfig */,
+				62CECE77C8EEAA94103B13E3 /* Pods-QuantsAppTask-QuantsAppTaskUITests.debug.xcconfig */,
+				D81F791177A03BF495AF9ACE /* Pods-QuantsAppTask-QuantsAppTaskUITests.release.xcconfig */,
+				E6C8BC84613CFAD889CD674E /* Pods-QuantsAppTaskTests.debug.xcconfig */,
+				8773EFA60106F9E802944D7C /* Pods-QuantsAppTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70B1105123F2E63D0043503C /* Build configuration list for PBXNativeTarget "QuantsAppTask" */;
 			buildPhases = (
+				48394B881FDD5D0D1B580F94 /* [CP] Check Pods Manifest.lock */,
 				70B1102023F2E6390043503C /* Sources */,
 				70B1102123F2E6390043503C /* Frameworks */,
 				70B1102223F2E6390043503C /* Resources */,
+				A48F7F0FF7ED4FD3A6AE0AE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70B1105423F2E63D0043503C /* Build configuration list for PBXNativeTarget "QuantsAppTaskTests" */;
 			buildPhases = (
+				242CCEAE8146F70CF35413B8 /* [CP] Check Pods Manifest.lock */,
 				70B1103923F2E63D0043503C /* Sources */,
 				70B1103A23F2E63D0043503C /* Frameworks */,
 				70B1103B23F2E63D0043503C /* Resources */,
@@ -173,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70B1105723F2E63D0043503C /* Build configuration list for PBXNativeTarget "QuantsAppTaskUITests" */;
 			buildPhases = (
+				D616D8DF785451786A79B9BB /* [CP] Check Pods Manifest.lock */,
 				70B1104423F2E63D0043503C /* Sources */,
 				70B1104523F2E63D0043503C /* Frameworks */,
 				70B1104623F2E63D0043503C /* Resources */,
+				2CBB8D35386DD471D89C0228 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +302,7 @@
 			files = (
 				70B1103723F2E63D0043503C /* LaunchScreen.storyboard in Resources */,
 				70B1103423F2E63D0043503C /* Assets.xcassets in Resources */,
+				7014A22F23FA9355003D367E /* photo.png in Resources */,
 				70B1102F23F2E63A0043503C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +323,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		242CCEAE8146F70CF35413B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuantsAppTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CBB8D35386DD471D89C0228 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask-QuantsAppTaskUITests/Pods-QuantsAppTask-QuantsAppTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask-QuantsAppTaskUITests/Pods-QuantsAppTask-QuantsAppTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask-QuantsAppTaskUITests/Pods-QuantsAppTask-QuantsAppTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48394B881FDD5D0D1B580F94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuantsAppTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48F7F0FF7ED4FD3A6AE0AE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask/Pods-QuantsAppTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask/Pods-QuantsAppTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuantsAppTask/Pods-QuantsAppTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D616D8DF785451786A79B9BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuantsAppTask-QuantsAppTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70B1102023F2E6390043503C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B1105F23F2F07B0043503C /* Model.swift in Sources */,
 				70B1102C23F2E63A0043503C /* ViewController.swift in Sources */,
 				70B1102823F2E6390043503C /* AppDelegate.swift in Sources */,
+				70B1105B23F2E6610043503C /* customTableViewCell.swift in Sources */,
+				70B1105D23F2EF4F0043503C /* SwiftyJSON.swift in Sources */,
 				70B1103223F2E63A0043503C /* QuantsAppTask.xcdatamodeld in Sources */,
 				70B1102A23F2E6390043503C /* SceneDelegate.swift in Sources */,
 			);
@@ -436,6 +608,7 @@
 		};
 		70B1105223F2E63D0043503C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6DF853A8F426903A91C43A /* Pods-QuantsAppTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +626,7 @@
 		};
 		70B1105323F2E63D0043503C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C255E414BDD64A9E3E48DE2 /* Pods-QuantsAppTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +644,7 @@
 		};
 		70B1105523F2E63D0043503C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C8BC84613CFAD889CD674E /* Pods-QuantsAppTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +666,7 @@
 		};
 		70B1105623F2E63D0043503C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8773EFA60106F9E802944D7C /* Pods-QuantsAppTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +688,7 @@
 		};
 		70B1105823F2E63D0043503C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CECE77C8EEAA94103B13E3 /* Pods-QuantsAppTask-QuantsAppTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +708,7 @@
 		};
 		70B1105923F2E63D0043503C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81F791177A03BF495AF9ACE /* Pods-QuantsAppTask-QuantsAppTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
