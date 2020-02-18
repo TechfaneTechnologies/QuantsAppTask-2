@@ -16,7 +16,6 @@ class ViewController: UIViewController,UITextViewDelegate {
     @IBOutlet weak var tableview: UITableView! {
         didSet {
             self.tableview.rowHeight = UITableView.automaticDimension
-            self.tableview.estimatedRowHeight = 40
         }
     }
     //MARK:- Application LifeCycle
@@ -76,15 +75,16 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         
         //MARK:- Time Stamp
         if let lastUpdated: String = (feedsArray[indexPath.row].timeStamp!){
-            let epocTime = TimeInterval(lastUpdated)! / 1000 // convert it from milliseconds dividing it by 1000
-            let unixTimestamp = NSDate(timeIntervalSince1970: epocTime) //convert unix timestamp to Date
+            let epocTime = TimeInterval(lastUpdated)! / 1000
+            let unixTimestamp = NSDate(timeIntervalSince1970: epocTime)
             let dateFormatter = DateFormatter()
             dateFormatter.timeZone = NSTimeZone() as TimeZone?
-            dateFormatter.locale = NSLocale.current // NSLocale(localeIdentifier: "en_US_POSIX")
+            dateFormatter.locale = NSLocale.current
             dateFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
             dateFormatter.date(from: String(describing: unixTimestamp))
             let updatedTimeStamp = unixTimestamp
             let cellDate = DateFormatter.localizedString(from: updatedTimeStamp as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
+            
             cell.timeLabel.text = cellDate
         }
 
@@ -100,13 +100,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         let r = randomCGFloat()
         let g = randomCGFloat()
         let b = randomCGFloat()
-
-        // If you wanted a random alpha, just create another
-        // random number for that too.
         return UIColor(red: r, green: g, blue: b, alpha: 1)
     }
-//    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
-//        <#code#>
-//    }
 }
 
