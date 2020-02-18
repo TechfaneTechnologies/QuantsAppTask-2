@@ -11,7 +11,7 @@ import SDWebImage
 
 class ViewController: UIViewController {
     var feedsArray = [Feeds]()
-    
+   
     //MARK:- Outlets
     @IBOutlet weak var tableview: UITableView! {
         didSet {
@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getFeed()
+        
+        
+
         
     }
     
@@ -73,11 +76,24 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         cell.statusLabel.text = (feedsArray[indexPath.row].status!!)
         cell.statusLabel.numberOfLines = 0
         cell.timeLabel.text = (feedsArray[indexPath.row].timeStamp!!)
+        //MARK:- Time Stamp
+        if let lastUpdated: String = (feedsArray[indexPath.row].timeStamp!){
+            let epocTime = TimeInterval(lastUpdated)! / 1000 // convert it from milliseconds dividing it by 1000
+            let unixTimestamp = NSDate(timeIntervalSince1970: epocTime) //convert unix timestamp to Date
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeZone = NSTimeZone() as TimeZone?
+            dateFormatter.locale = NSLocale.current // NSLocale(localeIdentifier: "en_US_POSIX")
+            dateFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+            dateFormatter.date(from: String(describing: unixTimestamp))
+            let updatedTimeStamp = unixTimestamp
+            let cellDate = DateFormatter.localizedString(from: updatedTimeStamp as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
+            cell.timeLabel.text = cellDate
+        }
+
         cell.profilePicImage.sd_setImage(with: URL(string: (feedsArray[indexPath.row].profilepic!!)), placeholderImage: UIImage(named: "ProfilePlaceholder"))
         cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
         
         return cell
     }
-    
 }
 

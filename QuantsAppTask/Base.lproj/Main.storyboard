@@ -55,22 +55,19 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yne-LN-eyV">
-                                                            <rect key="frame" x="15" y="92" width="369" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20.5" id="yey-0Y-VYB"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="15" y="92" width="369" height="84"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-pC-rNr">
-                                                            <rect key="frame" x="0.0" y="153.5" width="394" height="203.5"/>
+                                                            <rect key="frame" x="0.0" y="217" width="394" height="140"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="140" id="0IC-Q7-hch"/>
                                                             </constraints>
                                                         </imageView>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L52-yM-zmd">
-                                                            <rect key="frame" x="15" y="120.5" width="369" height="25"/>
+                                                            <rect key="frame" x="15" y="184" width="369" height="25"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="25" id="gSH-cv-YD1"/>
