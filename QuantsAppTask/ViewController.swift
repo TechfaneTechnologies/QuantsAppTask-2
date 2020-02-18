@@ -65,20 +65,19 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableview.dequeueReusableCell(withIdentifier: "customTableViewCell") as! customTableViewCell
-               cell.nameLabel.text = (feedsArray[indexPath.row].name!!)
+        cell.urlText.text = (feedsArray[indexPath.row].url!!)
+        cell.urlText.textColor = UIColor.link
+        cell.nameLabel.text = (feedsArray[indexPath.row].name!!)
         cell.statusLabel.text = (feedsArray[indexPath.row].status!!)
         cell.statusLabel.numberOfLines = 0
-                cell.timeLabel.text = (feedsArray[indexPath.row].timeStamp!!)
-                cell.statusLabel.numberOfLines = 0
-                cell.profilePicImage.sd_setImage(with: URL(string: (feedsArray[indexPath.row].profilepic!!)), placeholderImage: UIImage(named: "ProfilePlaceholder"))
-               cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
+        cell.timeLabel.text = (feedsArray[indexPath.row].timeStamp!!)
+        cell.profilePicImage.sd_setImage(with: URL(string: (feedsArray[indexPath.row].profilepic!!)), placeholderImage: UIImage(named: "ProfilePlaceholder"))
+        cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
         
         return cell
     }
-    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    //        return 380
-    //    }
     
 }
 

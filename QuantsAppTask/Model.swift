@@ -15,6 +15,7 @@ struct Feeds {
     let image:String??
     let name:String??
     let profilepic:String??
+    let url:String??
     
     init(json: JSON) {
         status = json["status"].stringValue
@@ -22,6 +23,7 @@ struct Feeds {
         image = json["image"].stringValue
         name = json["name"].stringValue
         profilepic = json["profilePic"].stringValue
+        url = json["url"].stringValue
         
     }
 }
