@@ -24,10 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getFeed()
-        
-        
-
-        
+   
     }
     
     //MARK:- Functions
@@ -71,11 +68,12 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableview.dequeueReusableCell(withIdentifier: "customTableViewCell") as! customTableViewCell
         cell.urlText.text = (feedsArray[indexPath.row].url!!)
-        cell.urlText.textColor = UIColor.link
+        cell.urlText.textColor = randomColor()
         cell.nameLabel.text = (feedsArray[indexPath.row].name!!)
         cell.statusLabel.text = (feedsArray[indexPath.row].status!!)
         cell.statusLabel.numberOfLines = 0
         cell.timeLabel.text = (feedsArray[indexPath.row].timeStamp!!)
+        
         //MARK:- Time Stamp
         if let lastUpdated: String = (feedsArray[indexPath.row].timeStamp!){
             let epocTime = TimeInterval(lastUpdated)! / 1000 // convert it from milliseconds dividing it by 1000
@@ -94,6 +92,18 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
         
         return cell
+    }
+    func randomCGFloat() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+    func randomColor() -> UIColor {
+        let r = randomCGFloat()
+        let g = randomCGFloat()
+        let b = randomCGFloat()
+
+        // If you wanted a random alpha, just create another
+        // random number for that too.
+        return UIColor(red: r, green: g, blue: b, alpha: 1)
     }
 }
 
