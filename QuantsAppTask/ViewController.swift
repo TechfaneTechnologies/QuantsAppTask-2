@@ -11,6 +11,7 @@ import SDWebImage
 
 class ViewController: UIViewController,UITextViewDelegate {
     var feedsArray = [Feeds]()
+    
    
     //MARK:- Outlets
     @IBOutlet weak var tableview: UITableView! {
@@ -23,9 +24,17 @@ class ViewController: UIViewController,UITextViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getFeed()
-   
+        
+       tableview.isUserInteractionEnabled = true
+               let pinchGeture = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchGesture))
+                   tableview.addGestureRecognizer(pinchGeture)
     }
     
+    @objc func pinchGesture(sender:UIPinchGestureRecognizer)  {
+        sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
+        sender.scale = 1.0
+    }
+
     //MARK:- Functions
     func  getFeed() {
         let url = URL(string: "https://api.androidhive.info/feed/feed.json")
@@ -87,10 +96,13 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
             
             cell.timeLabel.text = cellDate
         }
-
+        
         cell.profilePicImage.sd_setImage(with: URL(string: (feedsArray[indexPath.row].profilepic!!)), placeholderImage: UIImage(named: "ProfilePlaceholder"))
+        
+        
         cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
         
+    
         return cell
     }
     func randomCGFloat() -> CGFloat {

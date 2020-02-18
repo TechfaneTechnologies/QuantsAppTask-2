@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 class customTableViewCell: UITableViewCell {
+   
     
     @IBOutlet weak var profilePicImage: UIImageView!
     @IBOutlet weak var feedImage: UIImageView!
@@ -20,12 +20,18 @@ class customTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
+    @objc func pinchGesture(sender:UIPinchGestureRecognizer)  {
+           sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
+           sender.scale = 1.0
+        print("pinching")
+       }
 
 }
