@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextViewDelegate {
     var feedsArray = [Feeds]()
    
     //MARK:- Outlets
@@ -105,5 +105,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         // random number for that too.
         return UIColor(red: r, green: g, blue: b, alpha: 1)
     }
+//    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
+//        <#code#>
+//    }
 }
 
