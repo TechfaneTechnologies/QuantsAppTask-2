@@ -12,30 +12,21 @@ import SDWebImage
 class ViewController: UIViewController,UITextViewDelegate {
     var feedsArray = [Feeds]()
     
-   
-    //MARK:- Outlets
+        //MARK:- Outlets
     @IBOutlet weak var tableview: UITableView! {
         didSet {
             self.tableview.rowHeight = UITableView.automaticDimension
         }
     }
-    //MARK:- Application LifeCycle
+        //MARK:- Application LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getFeed()
-        
-       tableview.isUserInteractionEnabled = true
-               let pinchGeture = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchGesture))
-                   tableview.addGestureRecognizer(pinchGeture)
+        pinchgestures()
     }
     
-    @objc func pinchGesture(sender:UIPinchGestureRecognizer)  {
-        sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
-        sender.scale = 1.0
-    }
-
-    //MARK:- Functions
+        //MARK:- Functions
     func  getFeed() {
         let url = URL(string: "https://api.androidhive.info/feed/feed.json")
         URLSession.shared.dataTask(with: url!){ (data, response, error)
@@ -65,7 +56,7 @@ class ViewController: UIViewController,UITextViewDelegate {
     }
 }
 
-//MARK:- Extension
+        //MARK:- Extension TableViewCell
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,10 +92,31 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         
         
         cell.feedImage.sd_setImage(with: URL(string:(feedsArray[indexPath.row].image!!)), placeholderImage: UIImage(named: "FeedPlaceHolder"))
-        
-    
+
         return cell
     }
+
+}
+
+        //MARK:- Gestures
+
+extension ViewController {
+    
+    func pinchgestures() {
+        tableview.isUserInteractionEnabled = true
+        let pinchGeture = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchGesture))
+        tableview.addGestureRecognizer(pinchGeture)
+    }
+    
+    @objc func pinchGesture(sender:UIPinchGestureRecognizer)  {
+        sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
+        sender.scale = 1.0
+    }
+}
+
+        //MARK:- RandomColor
+extension ViewController {
+    
     func randomCGFloat() -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }
